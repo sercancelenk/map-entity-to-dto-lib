@@ -19,7 +19,7 @@ class User{
 
 public class UserModel {
 
-    **@MapperProperty(mappedProperty = "id")** --> Map property name(should be same with source class property)
+    __@MapperProperty(mappedProperty = "id")__ --> Map property name(should be same with source class property)
     private Long id;
     **@MapperProperty(mappedProperty = "username")** --> Map property name(should be same with source class property)
     private String username;
@@ -35,8 +35,8 @@ static public void main(String...args){
     
     userModelList = (List<UserModel>) Mapper.map(userList, UserModel.class);
 }
+```
 
 That's all.
 Happy Coding.
 @byzas
-```
